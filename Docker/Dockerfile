@@ -6,6 +6,7 @@ FROM rucio/rucio-clients:${RUCIO_VERSION}
 
 # Metadata
 LABEL maintainer="gwatts@uw.edu"
+LABEL rucio_version=${RUCIO_VERSION}
 
 # The certificates so rucio can properly access everything
 COPY certs/opt/rucio/etc/rucio.cfg /opt/rucio/etc/rucio.cfg
